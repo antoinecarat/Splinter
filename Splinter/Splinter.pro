@@ -23,13 +23,18 @@ DEFINES += QT_DEPRECATED_WARNINGS
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
 
-SOURCES += main.cpp\
-        mainwindow.cpp
+SOURCES += window.cpp main.cpp \
+    management.cpp \
+    research.cpp \
+    create_panel.cpp \
+    remove_panel.cpp
 
-HEADERS  += mainwindow.h
+HEADERS  += \
+    window.h \
+    mysystemmodel.h \
+    management.h \
+    research.h \
+    create_panel.h \
+    remove_panel.h
 
-FORMS    += mainwindow.ui
-
-DISTFILES += \
-    ../../../../../../ihmtest/inter.png \
-    ../../../../../../ihmtest/union.png
+FORMS    +=
